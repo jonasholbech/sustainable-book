@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="left"><h1>Hvad er problemet?</h1></div>
+        <div class="right">
+          <p>I bund og grund er der kun to problemer</p>
+          <ol>
+            <li>Hver kB koster ressourcer at sende</li>
+            <li>
+              Kode kræver ressourcer at køre på klientens computer, jo mindre
+              kode vi sender, dets bedre
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section>
+        <div class="left"><h1>Minimér ALT</h1></div>
+        <div class="right">
+          <p>
+            Jo færre bytes du sender jo bedre! Hver byte koster på regnskabet.
+          </p>
+          <p>
+            Ofte kan vi minimere den data vi sender over netværket, og der
+            findes værktøjer til det hele, og eks Astro gør rigtigt meget for os
+          </p>
+          <p>
+            Fjern alt hvad du kan fjerne, minimér din kode, dine billeder, dine
+            videoer og minimer antallet af "requests"
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="left"><h1>Vælg en grøn host</h1></div>
+        <div class="right">
+          <p>
+            Vores projekter skal online, men dem der hoster vores sites er ikke
+            alle lige grønne
+          </p>
+          <p>
+            Det kan være svært at vide hvad der er bedst da alle siger de er
+            grønne, men undersøg sagen og tag et kig på projektet
+            www.thegreenwebfoundation.org
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="left"><h1>Nettet ❤️ Statisk</h1></div>
+        <div class="right">
+          <p>
+            Vores sites kan hente data dynamisk, dvs ved hvert besøg, eller de
+            kan genereres statisk, dvs vi får et værktøj til at bygge sitet for
+            os når vi siger til.
+          </p>
+          <p>
+            Hvis vi henter data ved hvert besøg, starter vi databasen op hele
+            tiden. Kan vi undgå det kan vi spare super meget strøm, og vores
+            sites bliver hurtigere, med bedre UX til følge
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="left"><h1>Sig nej til frameworks</h1></div>
+        <div class="right">
+          <p>
+            Frameworks kan hjælpe med at bygge tingene hurtigere, men prisen
+            bliver betalt af dine brugerre og af miljøet.
+          </p>
+          <p>
+            Kan du sige nej til frameworks, ekstra biblioteker og færdige
+            designsystemer, kan du spare virkeligt mange bytes
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="left"><h1>Tættere på brugeren</h1></div>
+        <div class="right">
+          <p>
+            Når koden skal sendes til klienten, skal den sendes kortest muligt
+          </p>
+          <p>
+            Så, kan du vælge en host der er tæt på brugeren er det bedre i det
+            store regnskab.
+          </p>
+          <p>
+            Når du bruger eks Supabase spørger den dig hvor din database skal
+            være, rent fysisk, der er Frankfurt langt bedre for os end
+            Washington
+          </p>
+          <p>
+            Til sidst findes der noget der hedder CDN du kan researche hvis du
+            bruger frameworks
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="left network"><h1>Mål, Mål, Mål</h1></div>
+        <div class="right">
+          <p>
+            Mens du udvikler, og når dit site er live, så mål hvor mange kB dit
+            site fylder
+          </p>
+          <p>
+            Det er så let at overse et billede så det pludseligt fylder 1-2MB
+          </p>
+          <p>
+            Google Lighthouse er et værktøj der kan give dig et bud på hvad du
+            kan gøre bedre, men fanebaldet Netværk, i dine developer tools er
+            meget let og det skal bare gøres til en vane at bruge det
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="left"><h1>Brug det rigtige format</h1></div>
+        <div class="right">
+          <p>
+            Når vi ikke kan komme uden om billeder og videoer, så brug det
+            rigtige format
+          </p>
+          <p>
+            Når vi snakker billeder er formaterne AVIF og WebP som regel at
+            foretrække
+          </p>
+          <p>Når vi snakker video er WebM nok det bedste valg</p>
+        </div>
+      </section>
+      <section>
+        <div class="left"><h1>"Principle of least power"</h1></div>
+        <div class="right">
+          <p>Det er bedre at bruge HTML end CSS og CSS er bedre end JS</p>
+          <p>Brug den mindst belastende teknologi til at løse dit problem</p>
+          <p>
+            Kan det løses i HTML er det altid bedst, dernsæt CSS og til sidst JS
+          </p>
+        </div>
+      </section>
+      <section class="a11y-section">
+        <div class="left a11y"><h1>a11y</h1></div>
+        <div class="right">
+          <p>
+            Accessibility (a11y) er et kæmpe område, og knytter sig ikke til
+            miljøet, men til slutbrugeren
+          </p>
+          <p>
+            Den kode du skriver påvirker dine brugere, og ikke alle har samme
+            forudsætninger
+          </p>
+          <p>
+            Brug HTML som det var tiltænkt, links til at navigere, knapper til
+            at interagere, lister, overskrifter og så videre, så får du en god
+            start
+          </p>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

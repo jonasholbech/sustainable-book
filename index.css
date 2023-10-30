@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  word-wrap: break-word;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+code {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  scroll-snap-type: y mandatory;
+  gap: 1rem;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+h1 {
+  font-size: clamp(1rem, -0.875rem + 8.333vw, 6.5rem);
+  text-align: center;
+}
+section {
+  scroll-snap-type: y mandatory;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: 50vw;
+  gap: 1rem;
+  scroll-snap-align: center;
+}
+section > * {
+  display: grid;
+  place-items: center;
+  border: 2rem solid #000;
+  width: 100%;
+}
+.left {
+  background-color: yellow;
+}
+.left.network {
+  background-image: url(network.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  h1 {
+    color: white;
+  }
+}
+section.a11y-section .left.a11y {
+  background-image: url(a11y.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  h1 {
+    color: black;
+  }
+}
+section:nth-child(even) .left {
+  background: royalblue;
+  color: whitesmoke;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+  padding: 1rem;
+  font-size: clamp(1rem, -0.875rem + 8.333vw, 2rem);
+}
