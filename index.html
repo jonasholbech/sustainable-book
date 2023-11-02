@@ -22,18 +22,29 @@
         </div>
       </section>
       <section>
-        <div class="left"><h1>Minimér ALT</h1></div>
+        <div class="left">
+          <img src="minify.png" alt="" />
+          <h1>Minimér ALT</h1>
+        </div>
         <div class="right">
           <p>
             Jo færre bytes du sender jo bedre! Hver byte koster på regnskabet.
           </p>
           <p>
-            Ofte kan vi minimere den data vi sender over netværket, og der
-            findes værktøjer til det hele, og eks Astro gør rigtigt meget for os
+            Vi har rigtigt mange muligehder for at minimere den data vi sender
+            over netværket. I HTML, CSS og JavaScript kan vi fjerne alle
+            mellemrum der ikke har betydning, og det kan reducere størrelsen på
+            vores filer betragteligt
           </p>
           <p>
             Fjern alt hvad du kan fjerne, minimér din kode, dine billeder, dine
             videoer og minimer antallet af "requests"
+          </p>
+          <p>
+            Der findes rigtigt mange værktøjer der kan hjælpe med at minimere og
+            med at fjerne "overhead". Astro (https://astro.build) er et nyt bud
+            på hvordan vi kan udvikle på en moderne og effektiv måde, uden at
+            sende alt muligt unødvendigt kode til brugeren
           </p>
         </div>
       </section>
@@ -54,10 +65,17 @@
       <section>
         <div class="left"><h1>Nettet ❤️ Statisk</h1></div>
         <div class="right">
+          <p>Vores sites kan være dynamiske eller statiske.</p>
           <p>
-            Vores sites kan hente data dynamisk, dvs ved hvert besøg, eller de
-            kan genereres statisk, dvs vi får et værktøj til at bygge sitet for
-            os når vi siger til.
+            Lidt forsimplet så er dynamiske site noget hvor indholdet hentes fra
+            en database ved hvert eneste besøg
+          </p>
+          <p>
+            Statiske sites er sites hvor vi ikke behøver kode til at generere
+            indeholdet. Det gør vi en gang for alle
+          </p>
+          <p>
+            Og så kan vi bare generere sitet igen hvis vores data ændrer sig
           </p>
           <p>
             Hvis vi henter data ved hvert besøg, starter vi databasen op hele
@@ -76,6 +94,13 @@
           <p>
             Kan du sige nej til frameworks, ekstra biblioteker og færdige
             designsystemer, kan du spare virkeligt mange bytes
+          </p>
+          <p>
+            Ikke alle frameworks er dog lige slemme, og frameworks så som Astro
+            øger faktisk ikke størrelsen
+          </p>
+          <p>
+            Tænk dig om, kan du undvære det? Findes der et "lettere" alternativ?
           </p>
         </div>
       </section>
@@ -102,7 +127,10 @@
       </section>
 
       <section>
-        <div class="left network"><h1>Mål, Mål, Mål</h1></div>
+        <div class="left network">
+          <img src="network.png" alt="" />
+          <h1>Mål, Mål, Mål</h1>
+        </div>
         <div class="right">
           <p>
             Mens du udvikler, og når dit site er live, så mål hvor mange kB dit
@@ -130,6 +158,11 @@
             foretrække
           </p>
           <p>Når vi snakker video er WebM nok det bedste valg</p>
+          <p>
+            <a href="https://squoosh.app/">https://squoosh.app/</a> er et super
+            værktøj til at optimere dine billeder, men også her er der mulighed
+            for noget automatisering
+          </p>
         </div>
       </section>
       <section>
@@ -138,16 +171,25 @@
           <p>Det er bedre at bruge HTML end CSS og CSS er bedre end JS</p>
           <p>Brug den mindst belastende teknologi til at løse dit problem</p>
           <p>
-            Kan det løses i HTML er det altid bedst, dernsæt CSS og til sidst JS
+            Kan det løses i HTML er det altid bedst, dernæst CSS og til sidst JS
+          </p>
+          <p class="hint">
+            Kender du eksempelvis &lt;details&gt; elementet i HTML? Med 3
+            linjers html kan vi lave et element der kan åbnes og lukkes (læs
+            mere), UDEN brug af JavaScript
           </p>
         </div>
       </section>
       <section class="a11y-section">
-        <div class="left a11y"><h1>a11y</h1></div>
+        <div class="left a11y">
+          <img src="a11y.png" alt="" />
+          <h1>a11y</h1>
+        </div>
         <div class="right">
           <p>
-            Accessibility (a11y) er et kæmpe område, og knytter sig ikke til
-            miljøet, men til slutbrugeren
+            Accessibility (a11y) er et kæmpe område, som fortjener meget mere
+            plads end det får her, og knytter sig ikke til miljøet, men til
+            slutbrugeren
           </p>
           <p>
             Den kode du skriver påvirker dine brugere, og ikke alle har samme
